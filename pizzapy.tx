@@ -1,0 +1,44 @@
+Program:
+    title=Title
+    'Ingredients:' ingredients+=Ingredient*
+    'Method:' instructions+=Instruction*
+    'bone apple teeth';
+
+Title:
+    name=/.*/;
+
+Unit:
+    /[a-zA-Z]+/;
+
+Ingredient:
+    'Add' value=INT unit=Unit 'of' name=ID 'to the pizza';
+
+Instruction:
+    AddStatement | Bake | Conditional | NegativeConditional | Loop | PrintStatement;
+
+AddStatement:
+    'Add' value=INT unit=Unit 'of' name=ID 'to the pizza';
+
+Bake:
+    'Bake for' minutes=INT 'minute' ('s')?;
+
+Conditional:
+    'Check if' var=ID 'slices evenly into' divisor=INT ':'
+        instructions+=Instruction*
+    'Take out if ready';
+
+NegativeConditional:
+    'Check if' var=ID 'does not slice evenly into' divisor=INT ':'
+        instructions+=Instruction*
+    'Take out if ready';
+
+Loop:
+    'Simmer while' var=ID 'is barely cooked up to' limit=INT ':'
+        instructions+=Instruction*
+    'Take out when done';
+
+PrintStatement:
+    'Plate' var=ID;
+
+Comment:
+    /\/\/.*$/;

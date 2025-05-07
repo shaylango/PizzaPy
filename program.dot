@@ -1,0 +1,72 @@
+
+    digraph textX {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+4338002512 -> 4337999824 [label="title" arrowtail=diamond dir=both]
+4337999824[label="{FizzBuzz Pizza:Title|}"]
+4338002512 -> 4338003520 [label="ingredients:0" arrowtail=diamond dir=both]
+4338003520[label="{i:Ingredient|+value:int=0\l+unit:str='grams'\l}"]
+4338002512 -> 4338001840 [label="instructions:0" arrowtail=diamond dir=both]
+4338001840 -> 4338003856 [label="instructions:0" arrowtail=diamond dir=both]
+4338003856 -> 4338004192 [label="instructions:0" arrowtail=diamond dir=both]
+4338004192[label="{F:AddStatement|+value:int=70\l+unit:str='grams'\l}"]
+4338003856 -> 4338464272 [label="instructions:1" arrowtail=diamond dir=both]
+4338464272[label="{i:AddStatement|+value:int=105\l+unit:str='grams'\l}"]
+4338003856 -> 4338464592 [label="instructions:2" arrowtail=diamond dir=both]
+4338464592[label="{z:AddStatement|+value:int=122\l+unit:str='grams'\l}"]
+4338003856 -> 4338192928 [label="instructions:3" arrowtail=diamond dir=both]
+4338192928[label="{z:AddStatement|+value:int=122\l+unit:str='grams'\l}"]
+4338003856 -> 4338192016 [label="instructions:4" arrowtail=diamond dir=both]
+4338192016[label="{B:AddStatement|+value:int=66\l+unit:str='grams'\l}"]
+4338003856 -> 4338395344 [label="instructions:5" arrowtail=diamond dir=both]
+4338395344[label="{u:AddStatement|+value:int=117\l+unit:str='grams'\l}"]
+4338003856 -> 4338034592 [label="instructions:6" arrowtail=diamond dir=both]
+4338034592[label="{z:AddStatement|+value:int=122\l+unit:str='grams'\l}"]
+4338003856 -> 4338039760 [label="instructions:7" arrowtail=diamond dir=both]
+4338039760[label="{z:AddStatement|+value:int=122\l+unit:str='grams'\l}"]
+4338003856 -> 4338004528 [label="instructions:8" arrowtail=diamond dir=both]
+4338004528[label="{:Bake|+minutes:int=1\l}"]
+4338003856[label="{:Conditional|+var:str='i'\l+divisor:int=15\l}"]
+4338001840 -> 4338461072 [label="instructions:1" arrowtail=diamond dir=both]
+4338461072 -> 4338284112 [label="instructions:0" arrowtail=diamond dir=both]
+4338284112[label="{F:AddStatement|+value:int=70\l+unit:str='grams'\l}"]
+4338461072 -> 4338282576 [label="instructions:1" arrowtail=diamond dir=both]
+4338282576[label="{i:AddStatement|+value:int=105\l+unit:str='grams'\l}"]
+4338461072 -> 4338843728 [label="instructions:2" arrowtail=diamond dir=both]
+4338843728[label="{z:AddStatement|+value:int=122\l+unit:str='grams'\l}"]
+4338461072 -> 4338844208 [label="instructions:3" arrowtail=diamond dir=both]
+4338844208[label="{z:AddStatement|+value:int=122\l+unit:str='grams'\l}"]
+4338461072 -> 4338461712 [label="instructions:4" arrowtail=diamond dir=both]
+4338461712[label="{:Bake|+minutes:int=1\l}"]
+4338461072[label="{:Conditional|+var:str='i'\l+divisor:int=3\l}"]
+4338001840 -> 4338453712 [label="instructions:2" arrowtail=diamond dir=both]
+4338453712 -> 4337581456 [label="instructions:0" arrowtail=diamond dir=both]
+4337581456[label="{B:AddStatement|+value:int=66\l+unit:str='grams'\l}"]
+4338453712 -> 4337581008 [label="instructions:1" arrowtail=diamond dir=both]
+4337581008[label="{u:AddStatement|+value:int=117\l+unit:str='grams'\l}"]
+4338453712 -> 4338226752 [label="instructions:2" arrowtail=diamond dir=both]
+4338226752[label="{z:AddStatement|+value:int=122\l+unit:str='grams'\l}"]
+4338453712 -> 4334910160 [label="instructions:3" arrowtail=diamond dir=both]
+4334910160[label="{z:AddStatement|+value:int=122\l+unit:str='grams'\l}"]
+4338453712 -> 4338459472 [label="instructions:4" arrowtail=diamond dir=both]
+4338459472[label="{:Bake|+minutes:int=1\l}"]
+4338453712[label="{:Conditional|+var:str='i'\l+divisor:int=5\l}"]
+4338001840 -> 4338004864 [label="instructions:3" arrowtail=diamond dir=both]
+4338004864[label="{:PrintStatement|+var:str='i'\l}"]
+4338001840 -> 4338288400 [label="instructions:4" arrowtail=diamond dir=both]
+4338288400[label="{newline:AddStatement|+value:int=10\l+unit:str='grams'\l}"]
+4338001840 -> 4338194144 [label="instructions:5" arrowtail=diamond dir=both]
+4338194144[label="{:Bake|+minutes:int=1\l}"]
+4338001840[label="{:Loop|+var:str='i'\l+limit:int=100\l}"]
+4338002512[label="{:Program|}"]
+
+}

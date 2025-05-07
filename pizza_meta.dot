@@ -1,0 +1,58 @@
+
+    digraph textX {
+    fontname = "Bitstream Vera Sans"
+    fontsize = 8
+    node[
+        shape=record,
+        style=filled,
+        fillcolor=aliceblue
+    ]
+    nodesep = 0.3
+    edge[dir=black,arrowtail=empty]
+
+
+4338003184[ label="{Program|}"]
+
+4338453392[ label="{Title|name: STRING\l}"]
+
+4338193232[ label="{Ingredient|value: INT\lunit: Unit\lname: ID\l}"]
+
+4338192320[ label="{*Instruction|}"]
+
+4337925392[ label="{AddStatement|value: INT\lunit: Unit\lname: ID\l}"]
+
+4338035680[ label="{Bake|minutes: INT\l}"]
+
+4338033232[ label="{Conditional|var: ID\ldivisor: INT\l}"]
+
+4338275664[ label="{NegativeConditional|var: ID\ldivisor: INT\l}"]
+
+4338270288[ label="{Loop|var: ID\llimit: INT\l}"]
+
+4337663056[ label="{PrintStatement|var: ID\l}"]
+
+
+
+4338003184 -> 4338453392[arrowtail=diamond, dir=both, headlabel="title "]
+4338003184 -> 4338193232[arrowtail=diamond, dir=both, headlabel="ingredients 1..*"]
+4338003184 -> 4338192320[arrowtail=diamond, dir=both, headlabel="instructions 1..*"]
+4338192320 -> 4337925392 [dir=back]
+4338192320 -> 4338035680 [dir=back]
+4338192320 -> 4338033232 [dir=back]
+4338192320 -> 4338275664 [dir=back]
+4338192320 -> 4338270288 [dir=back]
+4338192320 -> 4337663056 [dir=back]
+4338033232 -> 4338192320[arrowtail=diamond, dir=both, headlabel="instructions 1..*"]
+4338275664 -> 4338192320[arrowtail=diamond, dir=both, headlabel="instructions 1..*"]
+4338270288 -> 4338192320[arrowtail=diamond, dir=both, headlabel="instructions 1..*"]
+match_rules [ shape=plaintext, label=< <table>
+	<tr>
+		<td><b>Comment</b></td><td>\/\/.*$</td>
+	</tr>
+	<tr>
+		<td><b>Unit</b></td><td>[a-zA-Z]+</td>
+	</tr>
+</table> >]
+
+
+}

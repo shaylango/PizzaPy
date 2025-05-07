@@ -1,0 +1,40 @@
+FizzBuzz Pizza
+Ingredients:
+Add 0 grams of i to the pizza
+
+Method:
+Simmer while i is barely cooked up to 100:
+    Check if i slices evenly into 15:
+        Add 70 grams of F to the pizza
+        Add 105 grams of i to the pizza
+        Add 122 grams of z to the pizza
+        Add 122 grams of z to the pizza
+        Add 66 grams of B to the pizza
+        Add 117 grams of u to the pizza
+        Add 122 grams of z to the pizza
+        Add 122 grams of z to the pizza
+        Bake for 1 minute
+    Take out if ready
+
+    Check if i slices evenly into 3:
+        Add 70 grams of F to the pizza
+        Add 105 grams of i to the pizza
+        Add 122 grams of z to the pizza
+        Add 122 grams of z to the pizza
+        Bake for 1 minute
+    Take out if ready
+
+    Check if i slices evenly into 5:
+        Add 66 grams of B to the pizza
+        Add 117 grams of u to the pizza
+        Add 122 grams of z to the pizza
+        Add 122 grams of z to the pizza
+        Bake for 1 minute
+    Take out if ready
+
+    Plate i
+    Add 10 grams of newline to the pizza
+    Bake for 1 minute
+Take out when done
+
+bone apple teeth
